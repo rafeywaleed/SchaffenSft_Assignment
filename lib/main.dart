@@ -155,27 +155,25 @@ class _MyHomePageState extends State<MyHomePage> {
                                   ),
                                 ],
                               ),
-                              Align(
-                                alignment: Alignment.bottomRight,
-                                child: IconButton(
-                                  icon: Container(
-                                    decoration: BoxDecoration(
-                                      color: const Color.fromARGB(36, 0, 0, 0),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Icon(
-                                        Icons.more_vert_rounded,
-                                        color: Colors.white,
-                                      ),
-                                    ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 3, right: 2),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(36, 0, 0, 0),
+                                    borderRadius: BorderRadius.circular(20),
                                   ),
-                                  onPressed: () {
-                                    bottomSheet();
-                                  },
+                                  child: IconButton(
+                                    icon: Icon(
+                                      Icons.more_vert_rounded,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: () {
+                                      bottomSheet();
+                                    },
+                                  ),
                                 ),
-                              ),
+                              )
                             ],
                           ),
                     background: Column(
